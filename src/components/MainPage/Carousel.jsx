@@ -1,6 +1,10 @@
 import { Carousel } from "@material-tailwind/react";
 import styles from "../../style";
-import { images } from "../../index.js";
+import { images1 } from "../../index.js";
+import { images2 } from "../../index.js";
+import { images3 } from "../../index.js";
+import { images4 } from "../../index.js";
+import { images5 } from "../../index.js";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa6";
 
@@ -10,9 +14,12 @@ const CarouselDefault = () => {
   const [curr, setCurr] = useState(0);
 
   const prev = () =>
-    setCurr((curr) => (curr === 0 ? images.length - 1 : curr - 1));
+    setCurr((curr) => (curr === 0 ? newArr.length - 1 : curr - 1));
   const next = () =>
-    setCurr((curr) => (curr === images.length - 1 ? 0 : curr + 1));
+    setCurr((curr) => (curr === newArr.length - 1 ? 0 : curr + 1));
+
+  const newArr = ["images1", "images2", "images3", "images4", "images5"];
+
 
   return (
     <section className="pt-[64px] pb-[150px] relative">
@@ -37,7 +44,7 @@ const CarouselDefault = () => {
         `}
             style={{ transform: `translateX(-${curr * 100}%)` }}
           >
-            {images.slice(0, 6).map((img) => (
+            {newArr.map((img) => (
               <img
                 src={img.image}
                 alt="Dzieci w przedszkolu"
@@ -49,7 +56,7 @@ const CarouselDefault = () => {
       </Carousel>
       <div className="absolute bottom-[50px] right-0 left-0">
         <div className="flex items-center justify-center gap-10">
-          {images.map((_, i) => (
+          {newArr.map((_, i) => (
             <div
               className={`
               transition-all w-5 h-5 bg-purple rounded-full

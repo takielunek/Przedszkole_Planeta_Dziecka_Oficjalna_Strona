@@ -144,8 +144,7 @@ export const day = [
 ];
 
 
-
-export const images = [
+export const images1 = [
   {
     id: "1",
     image: img7,
@@ -170,6 +169,10 @@ export const images = [
     id: "6",
     image: img12,
   },
+];
+
+
+export const images2 = [
   {
     id: "7",
     image: img13,
@@ -194,6 +197,12 @@ export const images = [
     id: "12",
     image: img18,
   },
+];
+
+
+
+export const images3 = [
+  
   {
     id: "13",
     image: img19,
@@ -218,6 +227,12 @@ export const images = [
     id: "18",
     image: img24,
   },
+  
+];
+
+
+export const images4 = [
+  
   {
     id: "19",
     image: img25,
@@ -242,6 +257,11 @@ export const images = [
     id: "24",
     image: img30,
   },
+  
+];
+
+export const images5 = [
+  
   {
     id: "25",
     image: img31,
@@ -269,30 +289,3 @@ export const images = [
 ];
 
 
-
-export const images1 = [
-  {
-    id: "1",
-    image: img7,
-  },
-  {
-    id: "2",
-    image: img8,
-  },
-  {
-    id: "3",
-    image: img9,
-  },
-  {
-    id: "4",
-    image: img10,
-  },
-  {
-    id: "5",
-    image: img11,
-  },
-  {
-    id: "6",
-    image: img12,
-  },
-]
