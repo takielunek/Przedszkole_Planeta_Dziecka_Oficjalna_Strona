@@ -51,7 +51,7 @@ export const about = [
     image: food,
     description: "Zbilansowane posiłki",
   },
- {
+  {
     id: "3",
     image: speechTherapist,
     description: "Gabinet logopedyczny",
@@ -66,7 +66,7 @@ export const about = [
     image: camera,
     description: "Monitoring rejestrujący zdarzenia w salach",
   },
- {
+  {
     id: "6",
     image: classes,
     description: "Szeroka gama zajęć dodatkowych",
@@ -86,6 +86,7 @@ export const about = [
     image: english,
     description: "Anglojęzyczność od pierwszych dni",
   },
+ 
 ];
 
 

@@ -23,7 +23,7 @@ const MobileNavbar = () => {
 
   return (
     <nav className="sm:hidden">
-      <div className=" flex text-2xl xs:text-3xl ss:text-4xl pt-5 xs:pt-6 ss:pt-7 space-x-6 cursor-pointer text-white ">
+      <div className=" flex text-2xl xs:text-3xl ss:text-4xl pt-5 xs:pt-6 ss:pt-7 space-x-6 cursor-pointer text-white pr-[30px]">
         <a href="tel:501 806 012">
           {" "}
           <FaPhoneVolume />

@@ -5,7 +5,7 @@ import arrow4 from "../../assets/arrows/Arrow_4.png";
 
 const Logo = () => {
   return (
-    <section className="bg-orange pl-[40px] sm:pl-[72px] relative h-[510px]">
+    <section className="bg-orange pl-[10px] xs:pl-[40px] sm:pl-[72px] relative h-[200px] xs:h-[250px] ss:h-[400px] sm:h-[450px] md:h-[510px]">
       <div className="flex flex-row pt-4">
         <img
           src={logo}
@@ -15,7 +15,7 @@ const Logo = () => {
         <img
           src={logo1}
           alt="Logo firmy"
-          className="h-[60px] xs:h-[70px] ss:h-[100px] my-6 ml-3"
+          className="h-[60px] xs:h-[70px] ss:h-[100px] my-0 ss:my-6 ml-3"
         />
       </div>
       <img
@@ -26,7 +26,7 @@ const Logo = () => {
       <img
         src={arrow4}
         alt="Kreskowana krzywa"
-        className="absolute bottom-0 left-0"
+        className="absolute bottom-0 left-0 hidden md:block"
       />
     </section>
   );

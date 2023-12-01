@@ -2,10 +2,10 @@ import styles from "../../style";
 
 const FirstMain = () => {
   return (
-    <section className="bg-cream px-[40px] sm:px-[72px]">
+    <section className="bg-cream px-[20px] xs:px-[40px] ss:px-[72px]">
       <div className="pt-[129px]">
         <div className="border-t-[7px] border-l-[7px] border-purple mb-[79px]">
-          <div className="mt-[44px] ml-[72px] pb-[61px]">
+          <div className="mt-[44px] ml-[30px] xs:ml-[50px] ss:ml-[72px] pb-[61px]">
             <h3 className={`${styles.s40} mb-[77px]`}>Godziny otwarcia</h3>
             <div className={`${styles.n20} space-y-4`}>
               <li>
@@ -40,7 +40,7 @@ const FirstMain = () => {
 
       <div>
         <div className="border-t-[7px] border-l-[7px] border-pink">
-          <div className="mt-[44px] ml-[72px] pb-[77px]">
+          <div className="mt-[44px] ml-[30px] xs:ml-[50px] ss:ml-[72px] pb-[77px]">
             <h3 className={`${styles.s40} mb-[77px]`}>Posiłki</h3>
             <div className={`${styles.n20}`}>
               <h4>

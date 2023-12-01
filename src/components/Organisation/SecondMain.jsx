@@ -2,33 +2,32 @@ import styles from "../../style";
 
 const SecondMain = () => {
   return (
-    <section className="bg-cream px-[40px] sm:px-[72px]">
+    <section className="bg-cream px-[20px] xs:px-[40px] ss:px-[72px]">
       <div className="border-t-[7px] border-l-[7px] border-purple mb-[79px]">
-        <div className="mt-[44px] ml-[72px] pb-[53px]">
+        <div className="mt-[44px] ml-[30px] xs:ml-[50px] ss:ml-[72px] pb-[53px]">
           <h3 className={`${styles.s40} mb-[77px]`}>Zajęcia dodatkowe</h3>
-          <div className={`${styles.n20}`}>
-            <div className={`${styles.flexRow}`}>
-              <div className="w-[50%]">
-                <h4 className={`${styles.n25} mb-10`}>
-                  Zajęcia zawarte w czesnym:
-                </h4>
-                <div>
-                  <li>zajęcia sportowe z elementami korektywy</li>
-                  <li>rytmika</li>
-                  <li>muzykoterapia</li>
-                  <li>dogoterapia</li>
-                  <li>zoomba dla dzeci</li>
-                </div>
+          <div className={`${styles.n20} ${styles.flexRow}`}>
+            <div className=" w-[100%] md:w-[50%]">
+              <h4 className={`${styles.n25} mb-10`}>
+                Zajęcia zawarte w czesnym:
+              </h4>
+              <div>
+                <li>zajęcia sportowe z elementami korektywy</li>
+                <li>rytmika</li>
+                <li>muzykoterapia</li>
+                <li>dogoterapia</li>
+                <li>zoomba dla dzeci</li>
               </div>
-              <div className="w-[50%]">
-                <h4 className={`${styles.n25} mb-10`}>
-                  Zajęcia dodatkowo płatne:
-                </h4>
-                <div>
-                  <li>nauka gry na pianinie</li>
-                  <li>terapia logopedyczna</li>
-                  <li>terapia ręki / TUS</li>
-                </div>
+            </div>
+
+            <div className="w-[100%] md:w-[50%] mt-10 md:mt-0">
+              <h4 className={`${styles.n25} mb-10`}>
+                Zajęcia dodatkowo płatne:
+              </h4>
+              <div>
+                <li>nauka gry na pianinie</li>
+                <li>terapia logopedyczna</li>
+                <li>terapia ręki / TUS</li>
               </div>
             </div>
           </div>
@@ -37,11 +36,11 @@ const SecondMain = () => {
 
       <div className="pb-[137px]">
         <div className="border-t-[7px] border-l-[7px] border-pink">
-          <div className="mt-[44px] ml-[72px] pb-[38px]">
+          <div className="mt-[44px] ml-[30px] xs:ml-[50px] ss:ml-[72px] pb-[38px]">
             <h3 className={`${styles.s40} mb-[51px]`}>Warunki lokalowe</h3>
-            <div className={`${styles.n20}`}>
-              <div className={`${styles.flexRow} mb-[114px]`}>
-                <div className="w-[50%]">
+            
+              <div className={`${styles.n20} ${styles.flexRow} mb-[60px] md:mb-[114px]`}>
+                <div className="w-[100%] md:w-[50%]">
                   <h4 className="mb-4">Placówka przedszkola posiada:</h4>
                   <div>
                     <li>
@@ -60,7 +59,7 @@ const SecondMain = () => {
                     </li>
                   </div>
                 </div>
-                <div className="w-[50%]">
+                <div className="w-[100%] md:w-[50%] mt-10 md:mt-0">
                   <h4>
                     Przedszkole Planeta Dziecka zlokalizowane jest w
                     przestronnym, dobrze oświetlonym budynku, spełniającym
@@ -75,7 +74,7 @@ const SecondMain = () => {
                   </h4>
                 </div>
               </div>
-            </div>
+           
             <div>
               <h4 className={`${styles.n20} font-semibold text-center mb-10`}>
                 “Dokładamy wszelkich starań, by świat dziecka w Planecie Dziecka
