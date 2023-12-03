@@ -17,7 +17,7 @@ const Contact = () => {
       </div>
 
       <form
-        action="https://formsubmit.co/suchedniow@planeta-dziecka.pl"
+        action="https://formsubmit.co/kontakt@przedszkole-planeta-dziecka.pl"
         method="POST"
         className="px-[10px] xs:px-[30px] ss:px-[60px] "
       >

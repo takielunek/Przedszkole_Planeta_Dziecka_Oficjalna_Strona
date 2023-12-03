@@ -1,6 +1,7 @@
 import AllRoutes from "./components/ForAllPages/AllRoutes";
 import styles from "./style";
 import { BrowserRouter as Router } from "react-router-dom";
+import Cookies from "./components/ForAllPages/Cookies";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Router>
         <AllRoutes />
       </Router>
+      <Cookies />
     </div>
   );
 }
