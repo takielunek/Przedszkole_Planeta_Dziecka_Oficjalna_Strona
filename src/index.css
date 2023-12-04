@@ -8,3 +8,6 @@
   scroll-behavior: smooth;
 }
 
+.swiper-pagination {
+  margin-top: 100px;
+}

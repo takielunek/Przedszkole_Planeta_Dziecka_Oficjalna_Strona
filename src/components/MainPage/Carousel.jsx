@@ -3,20 +3,21 @@ import styles from "../../style.js";
 import { images } from "../../index.js";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa6";
-
+import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
+import { Pagination } from "swiper/modules";
 
 const CarouselDefault = () => {
-  const [curr, setCurr] = useState(0);
+  // const [curr, setCurr] = useState(0);
 
-  const prev = () =>
-    setCurr((curr) => (curr === 0 ? images.length - 1 : curr - 1));
-  const next = () =>
-    setCurr((curr) => (curr === images.length - 1 ? 0 : curr + 1));
+  // const prev = () =>
+  //   setCurr((curr) => (curr === 0 ? images.length - 1 : curr - 1));
+  // const next = () =>
+  //   setCurr((curr) => (curr === images.length - 1 ? 0 : curr + 1));
 
   return (
     <section className="pt-[64px] pb-[150px] relative">
-      <div className="absolute flex inset-0 items-center justify-between z-10">
+      {/* <div className="absolute flex inset-0 items-center justify-between z-10">
         <button
           onClick={prev}
           className="text-pink ml-6 cursor-pointer hover:scale-125 duration-300"
@@ -29,8 +30,8 @@ const CarouselDefault = () => {
         >
           <FaChevronRight size={40} />
         </button>
-      </div>
-      <Carousel>
+      </div> */}
+      {/* <Carousel>
         <div className="overflow-hidden">
           <div
             className={`${styles.carouselImgs} transition-transform ease-out duration-500
@@ -47,8 +48,8 @@ const CarouselDefault = () => {
 
           </div>
         </div>
-      </Carousel>
-      <div className="absolute bottom-[50px] right-0 left-0">
+      </Carousel> */}
+      {/* <div className="absolute bottom-[50px] right-0 left-0">
         <div className="flex items-center justify-center gap-10">
           {images.map((_, i) => (
             <div
@@ -59,7 +60,19 @@ const CarouselDefault = () => {
             />
           ))}
         </div>
-      </div>
+      </div> */}
+
+      <Swiper modules={[Pagination]} pagination={{ clickable: true }}>
+        {images.map((img) => (
+          <SwiperSlide key={img.id}>
+            <img
+              src={img.image}
+              alt="Dzieci w przedszkolu"
+              className={`${styles.carouselImg} `}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };
