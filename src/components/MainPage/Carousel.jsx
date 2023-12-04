@@ -5,15 +5,32 @@ import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
-import { Pagination } from "swiper/modules";
+import { Grid, Pagination } from "swiper/modules";
+import { useWindowSize } from "../../../hooks.js";
 
 const CarouselDefault = () => {
+  const { width } = useWindowSize();
+  const isDestkop = width >= 720;
+  console.log(isDestkop);
+  // const size = useWindowSize();
+  // console.log("size", size);
+
   // const [curr, setCurr] = useState(0);
 
   // const prev = () =>
   //   setCurr((curr) => (curr === 0 ? images.length - 1 : curr - 1));
   // const next = () =>
   //   setCurr((curr) => (curr === images.length - 1 ? 0 : curr + 1));
+
+  const chunkArray = (array, chunkSize) => {
+    const result = [];
+    for (let i = 0; i < array.length; i += chunkSize) {
+      result.push(array.slice(i, i + chunkSize));
+    }
+    return result;
+  };
+
+  console.log(chunkArray(images, 6), "test");
 
   return (
     <section className="pt-[64px] pb-[150px] relative">
@@ -62,17 +79,54 @@ const CarouselDefault = () => {
         </div>
       </div> */}
 
-      <Swiper modules={[Pagination]} pagination={{ clickable: true }}>
-        {images.map((img) => (
-          <SwiperSlide key={img.id}>
-            <img
-              src={img.image}
-              alt="Dzieci w przedszkolu"
-              className={`${styles.carouselImg} `}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      {!isDestkop ? (
+        <Swiper
+          key="test"
+          className="my-swiper"
+          modules={[Pagination]}
+          pagination={{
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 5,
+          }}
+        >
+          {images.map((img) => (
+            <SwiperSlide key={img.id}>
+              <img
+                src={img.image}
+                alt="Dzieci w przedszkolu"
+                className={`${styles.carouselImg} `}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ) : (
+        <Swiper
+          slidesPerView={3}
+          grid={{
+            rows: 2,
+            fill: "row",
+          }}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 5,
+          }}
+          modules={[Grid, Pagination]}
+          className="my-swiper-destkop"
+        >
+          {images.map((img) => (
+            <SwiperSlide key={img.id}>
+              <img
+                src={img.image}
+                alt="Dzieci w przedszkolu"
+                className={`${styles.carouselImg} `}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      )}
     </section>
   );
 };
