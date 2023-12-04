@@ -7,7 +7,9 @@ const Contact = () => {
   return (
     <section className="bg-purple relative">
       <div className="text-center">
-        <h1 className={`${styles.n50} pt-[77px] pb-[35px] text-white`}>
+        <h1
+          className={`${styles.n50} pt-[77px] pb-[35px] text-white`}
+        >
           SZYBKI KONTAKT
         </h1>
         <h4 className={`${styles.s25} pb-[83px] text-white`}>
@@ -67,12 +69,12 @@ const Contact = () => {
       <img
         src={cloud}
         alt="Chmurka"
-        className="absolute top-[250px] left-[80px] hidden sm:block"
+        className="absolute top-[20px] lg:top-[250px] left-[20px] lg:left-[80px] hidden md:block"
       />
       <img
         src={balloon}
-        alt="Chmurka"
-        className="absolute top-[80px] right-[80px] hidden sm:block"
+        alt="Balon"
+        className="absolute top-[80px] right-[80px] hidden xxxl:block"
       />
     </section>
   );

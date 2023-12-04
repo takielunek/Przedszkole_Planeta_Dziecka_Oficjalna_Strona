@@ -7,7 +7,7 @@ const Cookies = () => {
       <CookieConsent
         debug={true}
         location="bottom"
-        style={{ background: "#fff", color: "#000" }}
+        style={{ background: "#fff", color: "#000", fontSize: "20px", padding: "10px" }}
         buttonStyle={{ background: "#dc7672", color: "#fff" }}
         buttonText="Akceptuję"
       >
