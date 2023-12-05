@@ -13,7 +13,7 @@ const OrganisationOfTheDay = () => {
           </h3>
           <div className="space-y-5">
             {day.map((day) => (
-              <div className={`${styles.n20} flex flex-col xl:flex-row `}>
+              <div key={day.id} className={`${styles.n20} flex flex-col xl:flex-row `}>
                 <h4 className="font-bold w-[100%] xl:w-[16%]">{day.time}</h4>
                 <h4 className="w-[100%] xl:w-[84%]">{day.action}</h4>
               </div>

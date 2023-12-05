@@ -11,7 +11,7 @@ import orangeCloud from "../../assets/graphics/orangeCloud.png";
 const Main = () => {
   return (
     <section className="relative">
-      <div className="bg-cream h-[100px] xxxl:h-[148px] hidden ss:block">
+      <div className="bg-cream h-[100px] xxxl:h-[148px] hidden ss:block z-0">
         <img
           src={arrow6}
           alt="Kreskowana krzywa"
@@ -35,7 +35,7 @@ const Main = () => {
           </div>
         </div>
         <div
-          className={`${styles.programShape} bg-yellow top-[80px] right-[72px]`}
+          className={`${styles.programShape} bg-yellow top-[80px] right-[72px] z-10`}
         >
           <img
             src={img4}
@@ -91,7 +91,7 @@ const Main = () => {
         </div>
 
         <div
-          className={`${styles.programShape} bg-pink top-[730px] left-[72px] `}
+          className={`${styles.programShape} bg-pink top-[730px] left-[72px] z-10`}
         >
           <img
             src={img2}
@@ -148,7 +148,7 @@ const Main = () => {
           </div>
         </div>
         <div
-          className={`${styles.programShape} bg-yellow top-[1380px] right-[72px]`}
+          className={`${styles.programShape} bg-yellow top-[1380px] right-[72px] z-10`}
         >
           <img
             src={img3}

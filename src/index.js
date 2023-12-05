@@ -8,6 +8,7 @@ import speechTherapist from "./assets/icon/speechTherapist.png";
 import classes from "./assets/icon/classes.png";
 import english from "./assets/icon/english.png";
 
+
 import img7 from "./assets/kids/img_7.png";
 import img8 from "./assets/kids/img_8.png";
 import img9 from "./assets/kids/img_9.png";
@@ -38,7 +39,6 @@ import img33 from "./assets/kids/img_33.jpg";
 import img34 from "./assets/kids/img_34.jpg";
 import img35 from "./assets/kids/img_35.jpg";
 import img36 from "./assets/kids/img_36.jpg";
-
 
 export const about = [
   {
@@ -145,155 +145,11 @@ export const day = [
 ];
 
 
-export const images1 = [
-  {
-    id: "1",
-    image: img7,
-  },
-  {
-    id: "2",
-    image: img8,
-  },
-  {
-    id: "3",
-    image: img9,
-  },
-  {
-    id: "4",
-    image: img10,
-  },
-  {
-    id: "5",
-    image: img11,
-  },
-  {
-    id: "6",
-    image: img12,
-  },
-];
-
-
-export const images2 = [
-  {
-    id: "7",
-    image: img13,
-  },
-  {
-    id: "8",
-    image: img14,
-  },
-  {
-    id: "9",
-    image: img15,
-  },
-  {
-    id: "10",
-    image: img16,
-  },
-  {
-    id: "11",
-    image: img17,
-  },
-  {
-    id: "12",
-    image: img18,
-  },
-];
-
-
-
-export const images3 = [
-  
-  {
-    id: "13",
-    image: img19,
-  },
-  {
-    id: "14",
-    image: img20,
-  },
-  {
-    id: "15",
-    image: img21,
-  },
-  {
-    id: "16",
-    image: img22,
-  },
-  {
-    id: "17",
-    image: img23,
-  },
-  {
-    id: "18",
-    image: img24,
-  },
-  
-];
-
-
-export const images4 = [
-  
-  {
-    id: "19",
-    image: img25,
-  },
-  {
-    id: "20",
-    image: img26,
-  },
-  {
-    id: "21",
-    image: img27,
-  },
-  {
-    id: "22",
-    image: img28,
-  },
-  {
-    id: "23",
-    image: img29,
-  },
-  {
-    id: "24",
-    image: img30,
-  },
-  
-];
-
-export const images5 = [
-  
-  {
-    id: "25",
-    image: img31,
-  },
-  {
-    id: "26",
-    image: img32,
-  },
-  {
-    id: "27",
-    image: img33,
-  },
-  {
-    id: "28",
-    image: img34,
-  },
-  {
-    id: "29",
-    image: img35,
-  },
-  {
-    id: "30",
-    image: img36,
-  },
-];
-
 
 export const images = [
   {
     id: "1",
-    image: img7,
+    image: img18,
   },
   {
     id: "2",
@@ -337,7 +193,7 @@ export const images = [
   },
   {
     id: "12",
-    image: img18,
+    image: img7,
   },
   {
     id: "13",

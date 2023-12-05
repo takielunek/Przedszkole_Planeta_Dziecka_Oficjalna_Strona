@@ -3,6 +3,8 @@ import CarouselDefault from "./Carousel";
 import cloud from "../../assets/graphics/cloud.png";
 import cloud2 from "../../assets/graphics/cloud2.png";
 
+
+
 const Gallery = () => {
   return (
     <section className="bg-white relative">

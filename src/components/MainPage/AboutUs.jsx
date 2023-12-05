@@ -22,9 +22,10 @@ const AboutUs = () => {
       </div>
       <div className="flex flex-wrap justify-evenly  gap-y-11 mb-[108px]">
         {about.map((ab) => (
-          <div className="flex flex-row w-[384px] items-center">
+          <div key={ab.id} className="flex flex-row w-[384px] items-center">
             <img
               src={ab.image}
+              
               alt="icon"
               className="w-[49px] h-[49px] mr-[21px]"
             />

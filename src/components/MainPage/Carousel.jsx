@@ -1,78 +1,79 @@
-import { Carousel } from "@material-tailwind/react";
 import styles from "../../style.js";
 import { images } from "../../index.js";
-import { FaChevronLeft } from "react-icons/fa";
-import { FaChevronRight } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useState } from "react";
-import { Pagination } from "swiper/modules";
+import { Grid, Pagination, Navigation } from "swiper/modules";
+import { useWindowSize } from "../../hooks.js";
+import { FaChevronRight } from "react-icons/fa6";
+import { FaChevronLeft } from "react-icons/fa6";
 
 const CarouselDefault = () => {
-  // const [curr, setCurr] = useState(0);
-
-  // const prev = () =>
-  //   setCurr((curr) => (curr === 0 ? images.length - 1 : curr - 1));
-  // const next = () =>
-  //   setCurr((curr) => (curr === images.length - 1 ? 0 : curr + 1));
+  const { width } = useWindowSize();
+  const isDestkop = width >= 480;
 
   return (
-    <section className="pt-[64px] pb-[150px] relative">
-      {/* <div className="absolute flex inset-0 items-center justify-between z-10">
-        <button
-          onClick={prev}
-          className="text-pink ml-6 cursor-pointer hover:scale-125 duration-300"
-        >
+    <section className="pt-[30px] sm:pt-[64px] pb-[30px] sm:pb-[40px] px-[20px] sm:px-[72px] relative">
+      <div className="absolute flex inset-0 items-center justify-between">
+        <div className="swiper-button-prev text-pink ml-6 mb-20 cursor-pointer hover:scale-125 duration-300">
           <FaChevronLeft size={40} />
-        </button>
-        <button
-          onClick={next}
-          className="text-purple mr-6 cursor-pointer hover:scale-125 duration-300"
-        >
+        </div>
+        <div className="swiper-button-next text-purple mr-6 mb-20 cursor-pointer hover:scale-125 duration-300">
           <FaChevronRight size={40} />
-        </button>
-      </div> */}
-      {/* <Carousel>
-        <div className="overflow-hidden">
-          <div
-            className={`${styles.carouselImgs} transition-transform ease-out duration-500
-        `}
-            style={{ transform: `translateX(-${curr * 100}%)` }}
-          >
-            {images.map((img) => (
+        </div>
+      </div>
+
+      {isDestkop ? (
+        <Swiper
+          slidesPerView={3}
+          slidesPerColumn={3}
+          slidesPerGroup={3}
+          grid={{
+            rows: 2,
+            fill: "row",
+          }}
+          spaceBetween={20}
+          pagination={{
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 5,
+          }}
+          modules={[Grid, Pagination, Navigation]}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          className="my-swiper-destkop  pb-[70px] md:pb-[100px] "
+        >
+          {images.map((img) => (
+            <SwiperSlide key={img.id}>
               <img
                 src={img.image}
                 alt="Dzieci w przedszkolu"
                 className={`${styles.carouselImg} `}
               />
-            ))}
-
-          </div>
-        </div>
-      </Carousel> */}
-      {/* <div className="absolute bottom-[50px] right-0 left-0">
-        <div className="flex items-center justify-center gap-10">
-          {images.map((_, i) => (
-            <div
-              className={`
-              transition-all w-5 h-5 bg-purple rounded-full
-              ${curr === i ? "p-2" : "bg-opacity-50"}
-            `}
-            />
+            </SwiperSlide>
           ))}
-        </div>
-      </div> */}
-
-      <Swiper modules={[Pagination]} pagination={{ clickable: true }}>
-        {images.map((img) => (
-          <SwiperSlide key={img.id}>
-            <img
-              src={img.image}
-              alt="Dzieci w przedszkolu"
-              className={`${styles.carouselImg} `}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        </Swiper>
+      ) : (
+        <Swiper
+          className="my-swiper pb-[50px]"
+          modules={[Pagination]}
+          pagination={{
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 5,
+          }}
+        >
+          {images.map((img) => (
+            <SwiperSlide key={img.id}>
+              <img
+                src={img.image}
+                alt="Dzieci w przedszkolu"
+                className={`${styles.carouselImg}`}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      )}
     </section>
   );
 };
