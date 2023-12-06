@@ -10,6 +10,7 @@ const CarouselDefault = () => {
   const { width } = useWindowSize();
   const isDestkop = width >= 480;
 
+
   return (
     <section className="pt-[30px] sm:pt-[64px] pb-[30px] sm:pb-[40px] px-[20px] sm:px-[72px] relative">
       <div className="absolute flex inset-0 items-center justify-between">
