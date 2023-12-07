@@ -10,6 +10,15 @@ Link do strony: przedszkole-planeta-dziecka.pl
 * Tailwind
 * React
 * Vite
+* FormSubmit
+* React Hook Form
+* React Router Dom
+* React Cookie Consent
+* React Icon
+* Embed Google Maps
+* Swiper
+* Framer Motion
 
 ## Kontakt
-Stworzone przez [Karolina Jesionek](mailto:karolina.anna.jesionek@gmail.com) 
+Programowała: [Karolina Jesionek](mailto:karolina.anna.jesionek@gmail.com) 
+UX/UI Designer: [Michał Mendrek](mailto:michal.mendrek22@gmail.com) 
