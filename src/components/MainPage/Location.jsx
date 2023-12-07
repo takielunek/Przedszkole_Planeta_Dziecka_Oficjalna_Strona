@@ -22,34 +22,7 @@ const Location = () => {
         ></iframe>
       </div>
 
-      {/* <div>
-        <div className="flex flex-row justify-center">
-          <h4
-            className={`${styles.s25} border-[3px] border-blue rounded-[40px] py-[10px] w-[34%] text-center absolute left-[242px] bottom-[264px]`}
-          >
-            Poniedziałek - Piątek
-          </h4>
-          <h4
-            className={`${styles.s25} border-[3px] border-yellow rounded-[40px] py-[10px] w-[34%] text-center absolute right-[242px] bottom-[264px]`}
-          >
-            6:30 - 17:00
-          </h4>
-        </div>
-        <div className="flex flex-row justify-center">
-          <h4
-            className={`${styles.s25} border-[3px] border-blue rounded-[40px] py-[10px] w-[34%] text-center absolute left-[242px] bottom-[172px]`}
-          >
-            Sobota - Niedziela
-          </h4>
-          <h4
-            className={`${styles.s25} border-[3px] border-yellow rounded-[40px] py-[10px] w-[34%] text-center absolute right-[242px] bottom-[172px]`}
-          >
-            Zamknięte
-          </h4>
-        </div>
-      </div> */}
-
-      <div className="space-y-[20px] ss:space-y-[30px]">
+      <div className="space-y-[20px] ss:space-y-[30px]" data-aos="fade-up">
         <div className="flex flex-col ss:flex-row justify-center mt-[55px] px-[15%] ss:px-[0%] ">
           <div className="border-[3px] border-blue rounded-[40px] py-[10px] w-[100%] ss:w-[34%] mb-[20px] ss:mb-[0px]">
             <h4 className={`${styles.s25} text-center`}>

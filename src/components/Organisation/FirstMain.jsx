@@ -7,7 +7,7 @@ const FirstMain = () => {
         <div className="border-t-[7px] border-l-[7px] border-purple mb-[79px]">
           <div className="mt-[44px] ml-[30px] xs:ml-[50px] ss:ml-[72px] pb-[61px]">
             <h3 className={`${styles.s40} mb-[77px]`}>Godziny otwarcia</h3>
-            <div className={`${styles.n20} space-y-4`}>
+            <div className={`${styles.n20} space-y-4`} data-aos="fade-up">
               <li>
                 Nasze przedszkole otwarte jest od{" "}
                 <span className="font-bold">
@@ -42,7 +42,7 @@ const FirstMain = () => {
         <div className="border-t-[7px] border-l-[7px] border-pink">
           <div className="mt-[44px] ml-[30px] xs:ml-[50px] ss:ml-[72px] pb-[77px]">
             <h3 className={`${styles.s40} mb-[77px]`}>Posiłki</h3>
-            <div className={`${styles.n20}`}>
+            <div className={`${styles.n20}`} data-aos="fade-up">
               <h4>
                 Codziennie każde z dzieci dostanie 3 zbalansowane i odżywcze
                 posiłki:

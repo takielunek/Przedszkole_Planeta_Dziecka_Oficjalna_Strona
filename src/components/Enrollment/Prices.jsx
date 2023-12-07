@@ -12,7 +12,10 @@ const Prices = () => {
         </h4>
       </div>
       <div className="flex flex-col md:flex-row justify-between">
-        <div className="bg-orange rounded-[20px] text-center mb-[30px] md:mb-[0px]">
+        <div
+          className="bg-orange rounded-[20px] text-center mb-[30px] md:mb-[0px]"
+          data-aos="fade-right"
+        >
           <div className="px-[40px] lg:px-[60px] xl:px-[80px] py-[50px] md:py-[155px]">
             <h3 className={`${styles.n40} text-black`}>Przedszkole</h3>
             <h4 className={`${styles.n20} text-pink`}>od 2,5 do 6 lat</h4>
@@ -30,7 +33,10 @@ const Prices = () => {
           </div>
         </div>
 
-        <div className="bg-orange rounded-[20px] text-center">
+        <div
+          className="bg-orange rounded-[20px] text-center"
+          data-aos="fade-left"
+        >
           <div className="px-[40px] lg:px-[60px] xl:px-[80px] pt-[50px] md:pt-[155px] pb-[50px] md:pb-[215px]">
             <h3 className={`${styles.n40} text-black`}>Żłobek</h3>
             <h4 className={`${styles.n20} text-pink`}>od 2 do 2,5 lat</h4>

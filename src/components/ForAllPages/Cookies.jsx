@@ -8,7 +8,7 @@ const Cookies = () => {
         debug={true}
         location="bottom"
         style={{ background: "#fff", color: "#000", fontSize: "20px", padding: "10px" }}
-        buttonStyle={{ background: "#dc7672", color: "#fff" }}
+        buttonStyle={{ background: "#dc7672", color: "#fff", borderRadius: "20px", padding: "10px 50px" }}
         buttonText="Akceptuję"
       >
         W celu świadczenia usług na najwyższym poziomie stosujemy pliki cookies.

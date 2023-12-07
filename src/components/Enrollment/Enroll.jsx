@@ -7,7 +7,7 @@ const Enroll = () => {
   return (
     <section className="bg-purple px-[20px] xs:px-[40px] ss:px-[72px] relative">
       <div className="flex flex-row ">
-        <div className="w-[100%] md:w-[54%]">
+        <div className="w-[100%] md:w-[54%]" data-aos="fade-right">
           <h3
             className={`${styles.n40} text-white pt-[44px] mb-[30px] md:mb-[70px]`}
           >
@@ -46,7 +46,10 @@ const Enroll = () => {
           />
         </div>
 
-        <div className="w-[100%] md:w-[42%] pb-[30px] md:pb-[113px] ">
+        <div
+          className="w-[100%] md:w-[42%] pb-[30px] md:pb-[113px] "
+          data-aos="fade-left"
+        >
           <h3 className={`${styles.n40} text-white mt-[59px] mb-[30px]`}>
             Zapisz dziecko
           </h3>

@@ -1,6 +1,6 @@
 import Footer from "../components/ForAllPages/Footer";
 import AboutUs from "../components/MainPage/AboutUs";
-import Contact from "../components/MainPage/Contact";
+import ContactSection from "../components/MainPage/ContactSection";
 import Gallery from "../components/MainPage/Gallery";
 import Header from "../components/MainPage/Header";
 import Location from "../components/MainPage/Location";
@@ -15,7 +15,7 @@ const MainPage = () => {
       <Logo />
       <Gallery />
       <Location />
-      <Contact />
+      <ContactSection />
       <Footer />
     </section>
   );

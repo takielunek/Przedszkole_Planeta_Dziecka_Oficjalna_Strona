@@ -6,7 +6,7 @@ import arrow4 from "../../assets/arrows/Arrow_4.png";
 const Logo = () => {
   return (
     <section className="bg-orange pl-[10px] xs:pl-[40px] sm:pl-[72px] relative h-[200px] xs:h-[250px] ss:h-[400px] sm:h-[450px] md:h-[510px]">
-      <div className="flex flex-row pt-4">
+      <div className="flex flex-row pt-4" data-aos="fade-right">
         <img
           src={logo}
           alt="Logo firmy"

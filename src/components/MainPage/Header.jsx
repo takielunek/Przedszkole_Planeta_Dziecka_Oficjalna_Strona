@@ -3,6 +3,7 @@ import styles from "../../style";
 import img1 from "../../assets/kids/img_1.png";
 import arrow9 from "../../assets/arrows/Arrow_9.png";
 
+
 const Header = () => {
   return (
     <section className="bg-purple pl-[0px] xxxxl:pl-[40px] md:pl-[72px]">
@@ -37,6 +38,7 @@ const Header = () => {
           src={img1}
           alt="Dziewczynka"
           className="absolute -inset-y-6 -right-10 h-[600px] md:h-[680px] lg:h-[750px] hidden xxxxl:block"
+          data-aos="fade-left"
         />
 
         <img

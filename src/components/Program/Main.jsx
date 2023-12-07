@@ -23,6 +23,7 @@ const Main = () => {
         <div className="bg-purple">
           <div
             className={`${styles.programText} pt-[85px] pb-[80px] md:pb-[157px]`}
+            data-aos="fade-right"
           >
             <h4 className={`${styles.r25} text-white`}>Grupa żłobkowa</h4>
             <h4 className={`${styles.r05} text-white w-[100%] sm:w-[600px]`}>
@@ -36,6 +37,7 @@ const Main = () => {
         </div>
         <div
           className={`${styles.programShape} bg-yellow top-[80px] right-[72px] z-10`}
+          data-aos="fade-left"
         >
           <img
             src={img4}
@@ -72,7 +74,10 @@ const Main = () => {
 
       <div>
         <div className="bg-purple">
-          <div className="flex justify-start lg:justify-end">
+          <div
+            className="flex justify-start lg:justify-end"
+            data-aos="fade-left"
+          >
             <div className={`${styles.programText} py-[85px]`}>
               <h4 className={`${styles.r25} text-white`}>Grupa maluszków</h4>
               <h4 className={`${styles.r05} text-white w-[100%] sm:w-[580px]`}>
@@ -92,6 +97,7 @@ const Main = () => {
 
         <div
           className={`${styles.programShape} bg-pink top-[730px] left-[72px] z-10`}
+          data-aos="fade-right"
         >
           <img
             src={img2}
@@ -130,6 +136,7 @@ const Main = () => {
         <div className="bg-purple">
           <div
             className={`${styles.programText} pt-[85px] pb-[80px] md:pb-[61px]`}
+            data-aos="fade-right"
           >
             <h4 className={`${styles.r25} text-white`}>Grupa przedszkolaków</h4>
             <h4 className={`${styles.r05} text-white w-[100%] sm:w-[600px]`}>
@@ -149,6 +156,7 @@ const Main = () => {
         </div>
         <div
           className={`${styles.programShape} bg-yellow top-[1380px] right-[72px] z-10`}
+          data-aos="fade-left"
         >
           <img
             src={img3}
@@ -185,7 +193,10 @@ const Main = () => {
       </div>
       <div>
         <div className="bg-purple">
-          <div className="flex justify-start lg:justify-end">
+          <div
+            className="flex justify-start lg:justify-end "
+            data-aos="fade-left"
+          >
             <div
               className={`${styles.programText} pt-[85px] pb-[80px] md:pb-[61px]`}
             >
@@ -210,6 +221,7 @@ const Main = () => {
 
         <div
           className={`${styles.programShape} bg-pink top-[2030px] left-[72px]`}
+          data-aos="fade-right"
         >
           <img
             src={img5}

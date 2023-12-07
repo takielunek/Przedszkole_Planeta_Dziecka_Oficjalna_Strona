@@ -20,12 +20,14 @@ const AboutUs = () => {
           interakcji z innymi dziećmi.
         </h4>
       </div>
-      <div className="flex flex-wrap justify-evenly  gap-y-11 mb-[108px]">
+      <div
+        className="flex flex-wrap justify-evenly  gap-y-11 mb-[108px] "
+        data-aos="fade-up"
+      >
         {about.map((ab) => (
           <div key={ab.id} className="flex flex-row w-[384px] items-center">
             <img
               src={ab.image}
-              
               alt="icon"
               className="w-[49px] h-[49px] mr-[21px]"
             />

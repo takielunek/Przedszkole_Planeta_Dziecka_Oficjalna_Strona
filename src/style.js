@@ -57,7 +57,7 @@ const styles = {
     "absolute top-[20px] xs:top-[40px] left-[40px] block lg:hidden h-[60px] xxs:h-[85px]",
 
   programText:
-    "px-[20px] xs:px-[72px] lg:px-[100px] xxxl:px-[150px] space-y-[51px]",
+    "px-[20px] xs:px-[72px] lg:px-[70px] xxxl:px-[150px] space-y-[51px]",
 };
 
 export default styles;
