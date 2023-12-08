@@ -8,6 +8,21 @@
   scroll-behavior: smooth;
 }
 
+
+.bg-program {
+background-image: url("assets/background/bg_3.png");
+}
+
+.bg-organisation {
+background-image: url("assets/background/bg_1.png");
+}
+
+.bg-enrollment {
+background-image: url("assets/background/bg_2.png");
+}
+
+
+
 .swiper-slide img {
   width: 100%;
 }

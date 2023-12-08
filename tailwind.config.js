@@ -4,11 +4,6 @@ export default {
 
   theme: {
     extend: {
-      backgroundImage: {
-        organisation: "url('src/assets/background/bg_1.png')",
-        program: "url('src/assets/background/bg_3.png')",
-        enrollment: "url('src/assets/background/bg_2.png')",
-      },
       colors: {
         white: "#ffffff",
         black: "#000000",
