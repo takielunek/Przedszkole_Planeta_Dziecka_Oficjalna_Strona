@@ -1,7 +1,7 @@
 ## Informacje ogólne
 Strona internetowa stworzona dla firmy: Przedszkole Planeta Dziecka.
 
-Link do strony: przedszkole-planeta-dziecka.pl
+Link do strony: https://przedszkole-planeta-dziecka.netlify.app/
 
 ## Użyte technologie
 * HTML
