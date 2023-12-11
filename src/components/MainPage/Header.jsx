@@ -27,7 +27,7 @@ const Header = () => {
             <form action="/enrollment">
               {" "}
               <button
-                className={`${styles.button} ${styles.s25} text-white my-[57px]`}
+                className={`${styles.button} ${styles.s25} text-white my-[30px] sm:my-[57px]`}
               >
                 Zapisz dziecko
               </button>
