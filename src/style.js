@@ -1,7 +1,7 @@
 const styles = {
   boxWidth: "xl:max-w-[1440px] m-auto",
 
-  n60: "font-nunito font-bold text-[30px]  xxs:text-[40px] xs:text-[50px] md:text-[60px] text-white",
+  n60: "font-nunito font-bold text-[30px]  xxs:text-[35px] xs:text-[50px] md:text-[60px] text-white",
   s54: "font-schoolbell font-normal text-[44px] sm:text-[54px]",
   n50: "font-nunito font-extrabold text-[35px] sm:text-[50px]",
   n40: "font-nunito font-bold text-[30px] sm:text-[40px]",
