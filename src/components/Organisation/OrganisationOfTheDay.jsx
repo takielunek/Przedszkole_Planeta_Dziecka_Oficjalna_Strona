@@ -5,7 +5,7 @@ import cloud2 from "../../assets/graphics/cloud2.png";
 
 const OrganisationOfTheDay = () => {
   return (
-    <section className="bg-cream pt-[180px] md:pt-[126px] pb-[86px] flex justify-center relative">
+    <section className="bg-cream pt-[180px] md:pt-[126px] pb-[50px] sm:pb-[86px] flex justify-center relative">
       <div className="border-orange border-[7px] rounded-[20px] w-[90%] xxs:w-[90%] xs:w-[85%] ss:w-[75%] sm:w-[70%] md:w-[67%]">
         <div className="m-[20px] sm:m-[40px] md:m-[56px]">
           <h3 className={`${styles.s40} mb-[60px] text-center`}>

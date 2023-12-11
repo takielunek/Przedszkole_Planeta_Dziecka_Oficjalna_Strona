@@ -2,13 +2,15 @@ import styles from "../../style";
 
 const SecondMain = () => {
   return (
-    <section className="bg-cream px-[20px] xs:px-[40px] ss:px-[72px]">
-      <div className="border-t-[7px] border-l-[7px] border-purple mb-[79px]">
-        <div className="mt-[44px] ml-[30px] xs:ml-[50px] ss:ml-[72px] pb-[53px]">
-          <h3 className={`${styles.s40} mb-[77px]`}>Zajęcia dodatkowe</h3>
+    <section className="bg-cream px-[20px] xs:px-[40px] ss:px-[72px] pb-[50px] sm:pb-[137px]">
+      <div className="border-t-[7px] border-l-[7px] border-purple mb-[50px] sm:mb-[79px]">
+        <div className="mt-[20px] sm:mt-[44px] ml-[30px] xs:ml-[50px] ss:ml-[72px] pb-[20px] sm:pb-[53px]">
+          <h3 className={`${styles.s40} mb-[20px] sm:mb-[77px]`}>
+            Zajęcia dodatkowe
+          </h3>
           <div className={`${styles.n20} ${styles.flexRow}`} data-aos="fade-up">
             <div className=" w-[100%] md:w-[50%]">
-              <h4 className={`${styles.n25} mb-10`}>
+              <h4 className={`${styles.n25} mb-[20px] sm:mb-[77px]`}>
                 Zajęcia zawarte w czesnym:
               </h4>
               <div>
@@ -21,7 +23,7 @@ const SecondMain = () => {
             </div>
 
             <div className="w-[100%] md:w-[50%] mt-10 md:mt-0">
-              <h4 className={`${styles.n25} mb-10`}>
+              <h4 className={`${styles.n25} mb-[20px] sm:mb-[77px]`}>
                 Zajęcia dodatkowo płatne:
               </h4>
               <div>
@@ -34,10 +36,12 @@ const SecondMain = () => {
         </div>
       </div>
 
-      <div className="pb-[137px]">
+      <div>
         <div className="border-t-[7px] border-l-[7px] border-pink">
-          <div className="mt-[44px] ml-[30px] xs:ml-[50px] ss:ml-[72px] pb-[38px]">
-            <h3 className={`${styles.s40} mb-[51px]`}>Warunki lokalowe</h3>
+          <div className="mt-[20px] sm:mt-[44px] ml-[30px] xs:ml-[50px] ss:ml-[72px] pb-[38px]">
+            <h3 className={`${styles.s40} mb-[20px] sm:mb-[51px]`}>
+              Warunki lokalowe
+            </h3>
 
             <div
               className={`${styles.n20} ${styles.flexRow} mb-[60px] md:mb-[114px]`}

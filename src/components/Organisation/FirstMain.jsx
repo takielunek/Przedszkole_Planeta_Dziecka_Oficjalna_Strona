@@ -3,10 +3,12 @@ import styles from "../../style";
 const FirstMain = () => {
   return (
     <section className="bg-cream px-[20px] xs:px-[40px] ss:px-[72px]">
-      <div className="pt-[129px]">
-        <div className="border-t-[7px] border-l-[7px] border-purple mb-[79px]">
-          <div className="mt-[44px] ml-[30px] xs:ml-[50px] ss:ml-[72px] pb-[61px]">
-            <h3 className={`${styles.s40} mb-[77px]`}>Godziny otwarcia</h3>
+      <div className="pt-[50px] sm:pt-[129px]">
+        <div className="border-t-[7px] border-l-[7px] border-purple mb-[50px] sm:mb-[79px]">
+          <div className="mt-[20px] sm:mt-[44px] ml-[30px] xs:ml-[50px] ss:ml-[72px] pb-[20px] sm:pb-[61px]">
+            <h3 className={`${styles.s40} mb-[20px] sm:mb-[77px]`}>
+              Godziny otwarcia
+            </h3>
             <div className={`${styles.n20} space-y-4`} data-aos="fade-up">
               <li>
                 Nasze przedszkole otwarte jest od{" "}
@@ -40,8 +42,8 @@ const FirstMain = () => {
 
       <div>
         <div className="border-t-[7px] border-l-[7px] border-pink">
-          <div className="mt-[44px] ml-[30px] xs:ml-[50px] ss:ml-[72px] pb-[77px]">
-            <h3 className={`${styles.s40} mb-[77px]`}>Posiłki</h3>
+          <div className="mt-[20px] sm:mt-[44px] ml-[30px] xs:ml-[50px] ss:ml-[72px] pb-[20px] sm:pb-[77px]">
+            <h3 className={`${styles.s40} mb-[20px] sm:mb-[77px]`}>Posiłki</h3>
             <div className={`${styles.n20}`} data-aos="fade-up">
               <h4>
                 Codziennie każde z dzieci dostanie 3 zbalansowane i odżywcze

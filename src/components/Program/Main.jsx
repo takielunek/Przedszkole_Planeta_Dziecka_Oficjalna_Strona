@@ -22,7 +22,7 @@ const Main = () => {
       <div>
         <div className="bg-purple">
           <div
-            className={`${styles.programText} pt-[85px] pb-[80px] md:pb-[157px]`}
+            className={`${styles.programText} pt-[60px] sm:pt-[85px] pb-[80px] md:pb-[157px]`}
             data-aos="fade-right"
           >
             <h4 className={`${styles.r25} text-white`}>Grupa żłobkowa</h4>
@@ -78,7 +78,7 @@ const Main = () => {
             className="flex justify-start lg:justify-end"
             data-aos="fade-left"
           >
-            <div className={`${styles.programText} py-[85px]`}>
+            <div className={`${styles.programText} py-[60px] sm:py-[85px]`}>
               <h4 className={`${styles.r25} text-white`}>Grupa maluszków</h4>
               <h4 className={`${styles.r05} text-white w-[100%] sm:w-[580px]`}>
                 Grupa maluszków w przedszkolu to wyjątkowe miejsce, gdzie dzieci
@@ -135,7 +135,7 @@ const Main = () => {
       <div>
         <div className="bg-purple">
           <div
-            className={`${styles.programText} pt-[85px] pb-[80px] md:pb-[61px]`}
+            className={`${styles.programText} pt-[60px] sm:pt-[85px] pb-[80px] md:pb-[61px]`}
             data-aos="fade-right"
           >
             <h4 className={`${styles.r25} text-white`}>Grupa przedszkolaków</h4>
@@ -198,7 +198,7 @@ const Main = () => {
             data-aos="fade-left"
           >
             <div
-              className={`${styles.programText} pt-[85px] pb-[80px] md:pb-[61px]`}
+              className={`${styles.programText} pt-[60px] sm:pt-[85px] pb-[80px] md:pb-[61px]`}
             >
               <h4 className={`${styles.r25} text-white`}>Grupa starszaków</h4>
               <h4 className={`${styles.r05} text-white w-[100%] sm:w-[590px]`}>
@@ -239,7 +239,7 @@ const Main = () => {
         </div>
       </div>
 
-      <div className={`${styles.programCream} `}></div>
+      <div className={`${styles.programCream} hidden ss:block `}></div>
     </section>
   );
 };

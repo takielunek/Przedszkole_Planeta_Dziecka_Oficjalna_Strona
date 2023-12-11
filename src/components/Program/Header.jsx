@@ -7,7 +7,7 @@ const Header = () => {
       <Navbar />
       <div className="text-center text-white">
         <h1 className={`${styles.s54} pt-[50px] xs:pt-[151px]`}>Program</h1>
-        <h4 className={`${styles.n25} mt-[94px]`}>
+        <h4 className={`${styles.n25} mt-[50px] sm:mt-[94px]`}>
           Nasza doświadczona kadra i dostosowany do wieku program nauczania
           zapewniają Twojemu dziecku wyjątkowe doświadczenie edukacyjne w każdym
           roku.
