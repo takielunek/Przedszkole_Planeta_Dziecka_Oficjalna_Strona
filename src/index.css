@@ -8,20 +8,22 @@
   scroll-behavior: smooth;
 }
 
+body {
+
+  overflow-x: hidden;
+}
 
 .bg-program {
-background-image: url("assets/background/bg_3.png");
+  background-image: url("assets/background/bg_3.png");
 }
 
 .bg-organisation {
-background-image: url("assets/background/bg_1.png");
+  background-image: url("assets/background/bg_1.png");
 }
 
 .bg-enrollment {
-background-image: url("assets/background/bg_2.png");
+  background-image: url("assets/background/bg_2.png");
 }
-
-
 
 .swiper-slide img {
   width: 100%;
@@ -71,6 +73,3 @@ background-image: url("assets/background/bg_2.png");
     margin: 0 20px !important;
   }
 }
-
-
-
