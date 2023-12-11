@@ -15,7 +15,7 @@ const Header = () => {
               <img
                 src={img1}
                 alt="Dziewczynka"
-                className="h-[260px] xxs:h-[280px] xs:h-[420px] ss:h-[550px] sm:h-[600px] block xxxxl:hidden"
+                className="h-[350px] xs:h-[420px] ss:h-[550px] sm:h-[600px] block xxxxl:hidden"
               />
             </div>
             <h4 className={`${styles.s25} text-white xxxxl:mt-[89px]`}>
