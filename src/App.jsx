@@ -5,6 +5,8 @@ import Cookies from "./components/ForAllPages/Cookies";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet";
+
 
 export default function App() {
   useEffect(() => {
@@ -17,6 +19,18 @@ export default function App() {
         <AllRoutes />
       </Router>
       <Cookies />
+      <Helmet>
+        <meta
+          property="og:title"
+          content="Niepubliczne Przedszkole Planeta Dziecka"
+        />
+        <meta property="og:image" content="./assets/background/og_image.png" />
+        <meta
+          property="og:url"
+          content="https://przedszkole-planeta-dziecka.netlify.app/"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
     </div>
   );
 }
