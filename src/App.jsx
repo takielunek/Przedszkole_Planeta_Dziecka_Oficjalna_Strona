@@ -13,6 +13,8 @@ export default function App() {
     AOS.init({ duration: 1200 });
   });
 
+   const ogImage = "./assets/background/og_image.png";
+
   return (
     <div className={`${styles.boxWidth}`}>
       <Router>
@@ -24,7 +26,7 @@ export default function App() {
           property="og:title"
           content="Niepubliczne Przedszkole Planeta Dziecka"
         />
-        <meta property="og:image" content="./assets/background/og_image.png" />
+        <meta property="og:image" content={ogImage} />
         <meta
           property="og:url"
           content="https://przedszkole-planeta-dziecka.netlify.app/"
