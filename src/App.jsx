@@ -13,7 +13,8 @@ export default function App() {
     AOS.init({ duration: 1200 });
   });
 
-   const ogImage = "https://przedszkole-planeta-dziecka.netlify.app/";
+   const ogImage =
+     "https://przedszkole-planeta-dziecka.netlify.app/assets/logo-wSbSBOOI.png";
 
   return (
     <div className={`${styles.boxWidth}`}>
